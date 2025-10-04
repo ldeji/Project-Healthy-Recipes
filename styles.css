@@ -243,15 +243,25 @@ nav {
 }
 
 .lowBanner {
-  /* border: solid 4px greenyellow; */
-  border-radius: 15px;
   background-color: #e3e9e2;
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: 45px;
-  margin-bottom: 60px
+  justify-content: space-between;
+  padding: 0.1rem;
 
 }
+.lowBanner > img {
+  object-fit: cover;
+}
+
+.cookSmarter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+}
+
 .cookSmarter > h5 {
   font-family: "Nunito", sans-serif;
   font-size: 33px;
@@ -269,25 +279,17 @@ nav {
   margin-left: -5px;
 }
 
-.cookSmarter > .btn {
-  background-color: #163b34;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  padding: 0.7rem 2.3rem;
-  border-radius: 8px;
-  border: none;
-  margin-left: 100px;  
-}
-
 .closeUP {
-  border: red solid 3px;
+  border: red solid 2px;
    display: flex;
    align-items: center;
    justify-content:space-between;
-   
-  
-   
-   
+   position: relative;
+   top: -2rem;
+}
+
+.closeUP > img {
+  border: blue solid 2px;
 }
 /* Responsive Code Styling  */
 @media (min-width: 360px) and (max-width: 560px) {
@@ -378,5 +380,25 @@ nav {
   .cookingIllustration {
     width: calc(100% - 40px);
     flex-direction: column;
+  }
+
+  .lowBanner {
+   width: calc(100% - 40px);
+   flex-direction: column;
+
+  } 
+  .lowBanner > img {
+   object-fit: cover;
+  }
+ 
+  .cookSmarter > h5{
+    width: calc(100% - 40px);
+}
+  .cookSmarter > p {
+    width: calc(100% - 40px);
+  }
+
+  .closeUP {
+    width: calc(100% - 10px);
   }
 }
