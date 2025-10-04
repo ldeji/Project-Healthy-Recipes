@@ -280,7 +280,7 @@ nav {
 }
 
 .closeUP {
-  border: red solid 2px;
+  /* border: red solid 2px; */
    display: flex;
    align-items: center;
    justify-content:space-between;
